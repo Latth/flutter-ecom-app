@@ -6,6 +6,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_lovers/model/product_model.dart';
 import 'package:grock/grock.dart';
 
+import '../components/custom_button.dart';
+
 class ProductDetail extends ConsumerStatefulWidget {
   Product product;
   ProductDetail({
@@ -29,20 +31,11 @@ class _ProductDetailState extends ConsumerState<ProductDetail> {
               productColors(),
               productSubtitle(),
               productPriceRow(),
-              Padding(
-                padding: [20, 20, 20, 0].paddingLTRB,
-                child: ElevatedButton(
-                    style: ButtonStyle(
-                        padding: MaterialStatePropertyAll(20.allP),
-                        backgroundColor:
-                            MaterialStatePropertyAll(Constant.orange)),
-                    onPressed: () {},
-                    child: const Text(
-                      "Add to cart",
-                      style: TextStyle(
-                        fontSize: 16,
-                      ),
-                    )),
+              CustomButton(
+                onTapFunc: () {
+                  print("Product Detail Clicked");
+                },
+                text: "Add to Cart",
               )
             ]),
             productAppBar()

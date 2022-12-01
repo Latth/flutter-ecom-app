@@ -44,18 +44,18 @@ class BaseScaffoldRiverpod extends ChangeNotifier {
   Widget changeBody() {
     switch (bottomNavbarCurrentIndex) {
       case 0:
-        return const Home();
+        return Home();
       case 1:
-        return const Wishlist();
+        return Wishlist();
       case 2:
-        return const Category();
+        return Category();
       case 3:
-        return const Profile();
+        return Profile();
       case 4:
-        return const Cart();
+        return Cart();
 
       default:
-        return const Home();
+        return Home();
     }
   }
 }
