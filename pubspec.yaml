@@ -1,5 +1,5 @@
 name: flutter_lovers
-description: A new Flutter project.
+description: E-COM Master
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -40,6 +40,8 @@ dependencies:
   riverpod: ^2.1.1
   grock: ^0.0.8+8
   flutter_svg: ^1.1.6
+  google_nav_bar: ^5.0.6
+  line_icons: ^2.0.1
 
 dev_dependencies:
   flutter_test:

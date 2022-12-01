@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_lovers/constant/constant.dart';
 
 import 'package:flutter_lovers/model/product_model.dart';
+import 'package:flutter_lovers/view/product_detail.dart';
 import 'package:grock/grock.dart';
 
 class ProductCard extends StatelessWidget {
@@ -15,6 +16,9 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GrockContainer(
+      onTap: () {
+        Grock.to(ProductDetail(product: product));
+      },
       width: 150,
       decoration: BoxDecoration(
         borderRadius: 10.allBR,
@@ -30,9 +34,12 @@ class ProductCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset(
-              product.imageURL,
-              fit: BoxFit.cover,
+            Hero(
+              tag: product.imageURL,
+              child: Image.asset(
+                product.imageURL,
+                fit: BoxFit.cover,
+              ),
             ),
             Padding(
               padding: 10.horizontalP,
@@ -74,7 +81,7 @@ class ProductCard extends StatelessWidget {
                   ),
                   Text(
                     product.stars.toString(),
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 13,
                     ),
                   ),

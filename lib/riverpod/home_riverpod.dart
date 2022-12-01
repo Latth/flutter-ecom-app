@@ -28,6 +28,10 @@ class HomeRiverpod extends ChangeNotifier {
       productPrice: 1299,
       productTitle: "Apple iMac 24 (2021)",
       stars: 4.9,
+      color: [Colors.cyan, Colors.deepOrange, Colors.deepPurpleAccent],
+      descTitle: "Free AppleTV+ fore one year!",
+      descDetail:
+          " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     ),
     Product(
       imageURL: Assets.images.imW1PNG,
@@ -35,6 +39,10 @@ class HomeRiverpod extends ChangeNotifier {
       productPrice: 859,
       productTitle: "Apple Watch Version 1",
       stars: 4.7,
+      color: [Colors.cyan, Colors.deepOrange, Colors.deepPurpleAccent],
+      descTitle: "Free AppleTV+ fore one year!",
+      descDetail:
+          " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     ),
     Product(
       imageURL: Assets.images.imP1PNG,
@@ -42,6 +50,10 @@ class HomeRiverpod extends ChangeNotifier {
       productPrice: 1199,
       productTitle: "iPhone 12 Series",
       stars: 5.0,
+      color: [Colors.cyan, Colors.deepOrange, Colors.deepPurpleAccent],
+      descTitle: "Free AppleTV+ fore one year!",
+      descDetail:
+          " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     ),
   ]);
   HomeProductsModel mostPopular =
@@ -52,6 +64,10 @@ class HomeRiverpod extends ChangeNotifier {
       productPrice: 1299,
       productTitle: "Apple iMac 27 (2022)",
       stars: 4.8,
+      color: [Colors.cyan, Colors.deepOrange, Colors.deepPurpleAccent],
+      descTitle: "Free AppleTV+ fore one year!",
+      descDetail:
+          " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     ),
     Product(
       imageURL: Assets.images.imW2PNG,
@@ -59,6 +75,10 @@ class HomeRiverpod extends ChangeNotifier {
       productPrice: 859,
       productTitle: "Apple Watch Version 2",
       stars: 4.8,
+      color: [Colors.cyan, Colors.deepOrange, Colors.deepPurpleAccent],
+      descTitle: "Free AppleTV+ fore one year!",
+      descDetail:
+          " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     ),
     Product(
       imageURL: Assets.images.imP2PNG,
@@ -66,6 +86,10 @@ class HomeRiverpod extends ChangeNotifier {
       productPrice: 1199,
       productTitle: "iPhone 14 Series (2022)",
       stars: 4.9,
+      color: [Colors.cyan, Colors.deepOrange, Colors.deepPurpleAccent],
+      descTitle: "Free AppleTV+ fore one year!",
+      descDetail:
+          " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     ),
   ]);
 }

@@ -24,7 +24,6 @@ class _HomeState extends ConsumerState<Home> {
     var watch = ref.watch(homeRiverpod);
     var read = ref.read(homeRiverpod);
     return Scaffold(
-      appBar: CustomAppBar(),
       body: ListView(
         children: [
           campaigns(read, watch),
@@ -40,7 +39,7 @@ class _HomeState extends ConsumerState<Home> {
     return Column(
       children: [
         Padding(
-          padding: [20, 40, 20, 0].paddingLTRB,
+          padding: [20, 25, 20, 0].paddingLTRB,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -67,7 +66,7 @@ class _HomeState extends ConsumerState<Home> {
               return ProductCard(product: model.producs[index]);
             }),
             separatorBuilder: (BuildContext context, int index) {
-              return SizedBox(
+              return const SizedBox(
                 width: 20,
               );
             },

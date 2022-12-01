@@ -5,6 +5,9 @@ class Product {
   int productPrice;
   double stars;
   bool isSaved;
+  String descTitle;
+  String descDetail;
+  List color;
 
   Product({
     required this.imageURL,
@@ -12,5 +15,8 @@ class Product {
     required this.productPrice,
     required this.stars,
     required this.isSaved,
+    required this.descDetail,
+    required this.color,
+    required this.descTitle,
   });
 }
